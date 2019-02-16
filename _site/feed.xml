@@ -1,4 +1,140 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-16T02:48:50-02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">John Doe</title><subtitle>A blog about technology and stuff related</subtitle><entry><title type="html">Markdown Extra Components</title><link href="http://localhost:4000/markdown-extra-components/" rel="alternate" type="text/html" title="Markdown Extra Components" /><published>2016-02-24T22:48:00-03:00</published><updated>2016-02-24T22:48:00-03:00</updated><id>http://localhost:4000/markdown-extra-components</id><content type="html" xml:base="http://localhost:4000/markdown-extra-components/">&lt;h2 id=&quot;summary&quot;&gt;Summary:&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-16T04:11:49-02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">William Martins</title><subtitle>Um blog sobre tecnologia e assuntos relacionados</subtitle><entry><title type="html">Setup Macos</title><link href="http://localhost:4000/setup-macos/" rel="alternate" type="text/html" title="Setup Macos" /><published>2019-02-16T00:00:00-02:00</published><updated>2019-02-16T00:00:00-02:00</updated><id>http://localhost:4000/setup-macos</id><content type="html" xml:base="http://localhost:4000/setup-macos/">&lt;h1&gt;Setup Developer para MacOS High Sierra&lt;/h1&gt;
+
+&lt;h2&gt;1 - Executar a atualização do sistema e as aplicações&lt;/h2&gt;
+
+&lt;h2&gt;2 - Instalar o Xcode&lt;/h2&gt;
+
+&lt;h2&gt;3 - Instalar HomeBrew&lt;/h2&gt;
+&lt;p&gt;https://brew.sh/&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Comando para instalar homebrew
+/usr/bin/ruby -e &quot;\$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
+
+brew cask install insomnia
+brew install git
+brew install node
+brew install yarn
+brew install watchman
+brew install php72
+brew install composer
+
+npm install -g ipt
+npm install -g http-server
+npm install -g esformatter
+npm install -g prettier
+npm install -g eslint
+# yeah, haters gonna hate
+npm install -g replace
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2&gt;4 - Instalação de softwares&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Dev
+brew cask install visual-studio-code
+brew cask install virtualbox
+brew cask install insomnia
+
+# Navegadores
+brew cask install firefox
+brew cask install google-chrome
+
+# Outros
+brew cask install skype
+brew cask install caffeine
+brew cask install vlc
+brew cask install slack 
+
+# Docker
+https://www.docker.com
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2&gt;Download VMs&lt;/h2&gt;
+&lt;p&gt;https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/&lt;/p&gt;
+
+&lt;h2&gt;PHPStorm&lt;/h2&gt;
+&lt;p&gt;Instalar a IDE PHPStorm disponível no disco de arquivos&lt;/p&gt;
+
+&lt;h2&gt;Configurando o VS Studio Code&lt;/h2&gt;
+&lt;p&gt;Extensões que devem ser instaladas:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# ESLint - Dirk Baeumer
+
+# Prettier Code formatter - Esben Petersen
+
+# Laravel 5 Snippets - Winnie Lin
+
+# PHP IntelliSense - Fliz Becker 
+
+# Material Icon Theme - Philipp Kief
+
+# Docker - Microsoft
+
+# Dracula Official - dracula-theme.theme-dracula
+
+
+Após incluir as extensões, deve ir em setting (JSON) e incluir as linhas:
+{
+  &quot;workbench.iconTheme&quot;: &quot;material-icon-theme&quot;,
+  &quot;prettier.singleQuote&quot;: true,
+  &quot;editor.formatOnSave&quot;: true,
+  &quot;prettier.eslintIntegration&quot;: true,
+  &quot;prettier.trailingComma&quot;: &quot;all&quot;,
+  &quot;prettier.semi&quot;: false,
+  &quot;editor.fontFamily&quot;: &quot;Fira Code, Menlo, Monaco, 'Courier New', monospace&quot;,
+  &quot;editor.fontLigatures&quot;: true,
+  &quot;editor.fontSize&quot;: 14,
+  &quot;workbench.statusBar.feedback.visible&quot;: false,
+  &quot;editor.tabSize&quot;: 2,
+  &quot;editor.minimap.enabled&quot;: false,
+  &quot;workbench.colorTheme&quot;: &quot;Dracula&quot;,
+  &quot;editor.lineHeight&quot;: 24,
+  &quot;editor.renderLineHighlight&quot;: &quot;gutter&quot;,
+  &quot;terminal.integrated.fontSize&quot;: 14,
+  &quot;emmet.syntaxProfiles&quot;: {
+    &quot;javascript&quot;: &quot;jsx&quot;
+  },
+  &quot;emmet.includeLanguages&quot;: {
+    &quot;javascript&quot;: &quot;javascriptreact&quot;
+  },
+  &quot;javascript.updateImportsOnFileMove.enabled&quot;: &quot;never&quot;,
+  &quot;breadcrumbs.enabled&quot;: true,
+  &quot;editor.parameterHints.enabled&quot;: false
+}
+
+A fonte Fira Code deve ser baixada e instalada no MacOS. https://github.com/tonsky/FiraCode
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2&gt;Configurando Terminal&lt;/h2&gt;
+
+&lt;p&gt;Baixar perfil de tema Dracula&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/dracula/terminal-app.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Instalar o tema de cores do terminal&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://ohmyz.sh/
+
+sh -c &quot;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Instalar pelo homebrew:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;brew install fish
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Quando a instalação estiver concluída, adicione Fish ao /etc/shells, o que exigirá uma senha administrativa:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;echo &quot;/usr/local/bin/fish&quot; | sudo tee -a /etc/shells
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Para fazer Fish ser o terminal padrão:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;chsh -s /usr/local/bin/fish
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2&gt;Alterar local de captura de tela&lt;/h2&gt;
+&lt;p&gt;O comando abaixo altera o local que é feito a captura de tela&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;defaults write com.apple.screencapture location ~/Pictures
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">Setup Developer para MacOS High Sierra</summary></entry><entry><title type="html">Markdown Extra Components</title><link href="http://localhost:4000/markdown-extra-components/" rel="alternate" type="text/html" title="Markdown Extra Components" /><published>2016-02-24T22:48:00-03:00</published><updated>2016-02-24T22:48:00-03:00</updated><id>http://localhost:4000/markdown-extra-components</id><content type="html" xml:base="http://localhost:4000/markdown-extra-components/">&lt;h2 id=&quot;summary&quot;&gt;Summary:&lt;/h2&gt;
 
 &lt;p&gt;You can pick as item to see how to apply in markdown.&lt;/p&gt;
 
@@ -39,7 +175,7 @@
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;side-by-side&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;toleft&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;image&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://localhost:4000/assets/images/profile.jpg&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;alt=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Alt Text&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;image&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://localhost:4000/assets/images/profile.png&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;alt=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Alt Text&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;figcaption&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;caption&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Photo by John Doe&lt;span class=&quot;nt&quot;&gt;&amp;lt;/figcaption&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 
@@ -50,7 +186,7 @@
 
 &lt;div class=&quot;side-by-side&quot;&gt;
     &lt;div class=&quot;toleft&quot;&gt;
-        &lt;img class=&quot;image&quot; src=&quot;http://localhost:4000/assets/images/profile.jpg&quot; alt=&quot;Alt Text&quot; /&gt;
+        &lt;img class=&quot;image&quot; src=&quot;http://localhost:4000/assets/images/profile.png&quot; alt=&quot;Alt Text&quot; /&gt;
         &lt;figcaption class=&quot;caption&quot;&gt;Photo by John Doe&lt;/figcaption&gt;
     &lt;/div&gt;
 
@@ -67,7 +203,7 @@
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;toright&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;image&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://localhost:4000/assets/images/profile.jpg&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;alt=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Alt Text&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;image&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://localhost:4000/assets/images/profile.png&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;alt=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Alt Text&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;figcaption&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;caption&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Photo by John Doe&lt;span class=&quot;nt&quot;&gt;&amp;lt;/figcaption&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
@@ -78,7 +214,7 @@
     &lt;/div&gt;
 
     &lt;div class=&quot;toright&quot;&gt;
-        &lt;img class=&quot;image&quot; src=&quot;http://localhost:4000/assets/images/profile.jpg&quot; alt=&quot;Alt Text&quot; /&gt;
+        &lt;img class=&quot;image&quot; src=&quot;http://localhost:4000/assets/images/profile.png&quot; alt=&quot;Alt Text&quot; /&gt;
         &lt;figcaption class=&quot;caption&quot;&gt;Photo by John Doe&lt;/figcaption&gt;
     &lt;/div&gt;
 &lt;/div&gt;

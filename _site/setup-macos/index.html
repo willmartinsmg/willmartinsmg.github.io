@@ -1,0 +1,138 @@
+<h1>Setup Developer para MacOS High Sierra</h1>
+
+<h2>1 - Executar a atualização do sistema e as aplicações</h2>
+
+<h2>2 - Instalar o Xcode</h2>
+
+<h2>3 - Instalar HomeBrew</h2>
+<p>https://brew.sh/</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Comando para instalar homebrew
+/usr/bin/ruby -e "\$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+brew cask install insomnia
+brew install git
+brew install node
+brew install yarn
+brew install watchman
+brew install php72
+brew install composer
+
+npm install -g ipt
+npm install -g http-server
+npm install -g esformatter
+npm install -g prettier
+npm install -g eslint
+# yeah, haters gonna hate
+npm install -g replace
+</code></pre></div></div>
+
+<h2>4 - Instalação de softwares</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Dev
+brew cask install visual-studio-code
+brew cask install virtualbox
+brew cask install insomnia
+
+# Navegadores
+brew cask install firefox
+brew cask install google-chrome
+
+# Outros
+brew cask install skype
+brew cask install caffeine
+brew cask install vlc
+brew cask install slack 
+
+# Docker
+https://www.docker.com
+
+</code></pre></div></div>
+
+<h2>Download VMs</h2>
+<p>https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/</p>
+
+<h2>PHPStorm</h2>
+<p>Instalar a IDE PHPStorm disponível no disco de arquivos</p>
+
+<h2>Configurando o VS Studio Code</h2>
+<p>Extensões que devem ser instaladas:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># ESLint - Dirk Baeumer
+
+# Prettier Code formatter - Esben Petersen
+
+# Laravel 5 Snippets - Winnie Lin
+
+# PHP IntelliSense - Fliz Becker 
+
+# Material Icon Theme - Philipp Kief
+
+# Docker - Microsoft
+
+# Dracula Official - dracula-theme.theme-dracula
+
+
+Após incluir as extensões, deve ir em setting (JSON) e incluir as linhas:
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "prettier.singleQuote": true,
+  "editor.formatOnSave": true,
+  "prettier.eslintIntegration": true,
+  "prettier.trailingComma": "all",
+  "prettier.semi": false,
+  "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "workbench.statusBar.feedback.visible": false,
+  "editor.tabSize": 2,
+  "editor.minimap.enabled": false,
+  "workbench.colorTheme": "Dracula",
+  "editor.lineHeight": 24,
+  "editor.renderLineHighlight": "gutter",
+  "terminal.integrated.fontSize": 14,
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "breadcrumbs.enabled": true,
+  "editor.parameterHints.enabled": false
+}
+
+A fonte Fira Code deve ser baixada e instalada no MacOS. https://github.com/tonsky/FiraCode
+
+</code></pre></div></div>
+
+<h2>Configurando Terminal</h2>
+
+<p>Baixar perfil de tema Dracula</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/dracula/terminal-app.git
+</code></pre></div></div>
+
+<p>Instalar o tema de cores do terminal</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://ohmyz.sh/
+
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+</code></pre></div></div>
+
+<p>Instalar pelo homebrew:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew install fish
+</code></pre></div></div>
+
+<p>Quando a instalação estiver concluída, adicione Fish ao /etc/shells, o que exigirá uma senha administrativa:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
+</code></pre></div></div>
+
+<p>Para fazer Fish ser o terminal padrão:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>chsh -s /usr/local/bin/fish
+</code></pre></div></div>
+
+<h2>Alterar local de captura de tela</h2>
+<p>O comando abaixo altera o local que é feito a captura de tela</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>defaults write com.apple.screencapture location ~/Pictures
+</code></pre></div></div>
+
