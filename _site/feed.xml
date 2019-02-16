@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-16T04:11:49-02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">William Martins</title><subtitle>Um blog sobre tecnologia e assuntos relacionados</subtitle><entry><title type="html">Setup Macos</title><link href="http://localhost:4000/setup-macos/" rel="alternate" type="text/html" title="Setup Macos" /><published>2019-02-16T00:00:00-02:00</published><updated>2019-02-16T00:00:00-02:00</updated><id>http://localhost:4000/setup-macos</id><content type="html" xml:base="http://localhost:4000/setup-macos/">&lt;h1&gt;Setup Developer para MacOS High Sierra&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-16T04:22:45-02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">William Martins</title><subtitle>Um blog sobre tecnologia e assuntos relacionados</subtitle><entry><title type="html">Setup Developer para MacOS High Sierra</title><link href="http://localhost:4000/setup-macos/" rel="alternate" type="text/html" title="Setup Developer para MacOS High Sierra" /><published>2019-02-16T04:20:00-02:00</published><updated>2019-02-16T04:20:00-02:00</updated><id>http://localhost:4000/setup-macos</id><content type="html" xml:base="http://localhost:4000/setup-macos/">&lt;h1&gt;Setup Developer para MacOS High Sierra&lt;/h1&gt;
 
 &lt;h2&gt;1 - Executar a atualização do sistema e as aplicações&lt;/h2&gt;
 
@@ -42,7 +42,7 @@ brew cask install google-chrome
 brew cask install skype
 brew cask install caffeine
 brew cask install vlc
-brew cask install slack 
+brew cask install slack
 
 # Docker
 https://www.docker.com
@@ -64,7 +64,7 @@ https://www.docker.com
 
 # Laravel 5 Snippets - Winnie Lin
 
-# PHP IntelliSense - Fliz Becker 
+# PHP IntelliSense - Fliz Becker
 
 # Material Icon Theme - Philipp Kief
 
@@ -109,24 +109,29 @@ A fonte Fira Code deve ser baixada e instalada no MacOS. https://github.com/tons
 &lt;h2&gt;Configurando Terminal&lt;/h2&gt;
 
 &lt;p&gt;Baixar perfil de tema Dracula&lt;/p&gt;
+
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/dracula/terminal-app.git
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Instalar o tema de cores do terminal&lt;/p&gt;
+
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://ohmyz.sh/
 
 sh -c &quot;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Instalar pelo homebrew:&lt;/p&gt;
+
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;brew install fish
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Quando a instalação estiver concluída, adicione Fish ao /etc/shells, o que exigirá uma senha administrativa:&lt;/p&gt;
+
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;echo &quot;/usr/local/bin/fish&quot; | sudo tee -a /etc/shells
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Para fazer Fish ser o terminal padrão:&lt;/p&gt;
+
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;chsh -s /usr/local/bin/fish
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -134,7 +139,7 @@ sh -c &quot;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/to
 &lt;p&gt;O comando abaixo altera o local que é feito a captura de tela&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;defaults write com.apple.screencapture location ~/Pictures
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">Setup Developer para MacOS High Sierra</summary></entry><entry><title type="html">Markdown Extra Components</title><link href="http://localhost:4000/markdown-extra-components/" rel="alternate" type="text/html" title="Markdown Extra Components" /><published>2016-02-24T22:48:00-03:00</published><updated>2016-02-24T22:48:00-03:00</updated><id>http://localhost:4000/markdown-extra-components</id><content type="html" xml:base="http://localhost:4000/markdown-extra-components/">&lt;h2 id=&quot;summary&quot;&gt;Summary:&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>willmartinsmg</name></author><category term="blog" /><category term="setup" /><category term="macos" /><summary type="html">Setup Developer para MacOS High Sierra</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/markdown.jpg" /></entry><entry><title type="html">Markdown Extra Components</title><link href="http://localhost:4000/markdown-extra-components/" rel="alternate" type="text/html" title="Markdown Extra Components" /><published>2016-02-24T22:48:00-03:00</published><updated>2016-02-24T22:48:00-03:00</updated><id>http://localhost:4000/markdown-extra-components</id><content type="html" xml:base="http://localhost:4000/markdown-extra-components/">&lt;h2 id=&quot;summary&quot;&gt;Summary:&lt;/h2&gt;
 
 &lt;p&gt;You can pick as item to see how to apply in markdown.&lt;/p&gt;
 

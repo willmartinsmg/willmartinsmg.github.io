@@ -1,3 +1,18 @@
+---
+title: 'Setup Developer para MacOS High Sierra'
+layout: post
+date: 2019-02-16 04:20
+image: /assets/images/markdown.jpg
+headerImage: false
+tag:
+  - setup
+  - macos
+star: true
+category: blog
+author: willmartinsmg
+description: Configuração de setup de desenvolvimento para o sistema Mac OS High Sierra
+---
+
 <h1>Setup Developer para MacOS High Sierra</h1>
 
 <h2>1 - Executar a atualização do sistema e as aplicações</h2>
@@ -44,7 +59,7 @@ brew cask install google-chrome
 brew cask install skype
 brew cask install caffeine
 brew cask install vlc
-brew cask install slack 
+brew cask install slack
 
 # Docker
 https://www.docker.com
@@ -67,7 +82,7 @@ Extensões que devem ser instaladas:
 
 # Laravel 5 Snippets - Winnie Lin
 
-# PHP IntelliSense - Fliz Becker 
+# PHP IntelliSense - Fliz Becker
 
 # Material Icon Theme - Philipp Kief
 
@@ -112,11 +127,13 @@ A fonte Fira Code deve ser baixada e instalada no MacOS. https://github.com/tons
 <h2>Configurando Terminal</h2>
 
 Baixar perfil de tema Dracula
+
 ```
 git clone https://github.com/dracula/terminal-app.git
 ```
 
 Instalar o tema de cores do terminal
+
 ```
 https://ohmyz.sh/
 
@@ -124,16 +141,19 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 ```
 
 Instalar pelo homebrew:
+
 ```
 brew install fish
 ```
 
 Quando a instalação estiver concluída, adicione Fish ao /etc/shells, o que exigirá uma senha administrativa:
+
 ```
 echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
 ```
 
 Para fazer Fish ser o terminal padrão:
+
 ```
 chsh -s /usr/local/bin/fish
 ```
@@ -144,7 +164,3 @@ O comando abaixo altera o local que é feito a captura de tela
 ```
 defaults write com.apple.screencapture location ~/Pictures
 ```
-
-
-
-
