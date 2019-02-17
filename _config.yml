@@ -22,7 +22,7 @@ url: https://willmartinsmg.github.io
 permalink: /:title/
 
 # To enable google analytics, supply your token below
-analytics-google: 'UA-90982821-2'
+analytics-google: 'UA-134621632-1'
 
 # To enable piwik tracking, supply your url & site ID below
 # analytics-piwik-url: 'piwik.my-host.com'
