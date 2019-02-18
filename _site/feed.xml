@@ -1,4 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-17T18:48:07-03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">William Martins</title><subtitle>Um blog sobre tecnologia e assuntos relacionados</subtitle><entry><title type="html">Setup Developer para MacOS High Sierra</title><link href="http://localhost:4000/setup-macos/" rel="alternate" type="text/html" title="Setup Developer para MacOS High Sierra" /><published>2019-02-16T04:20:00-02:00</published><updated>2019-02-16T04:20:00-02:00</updated><id>http://localhost:4000/setup-macos</id><content type="html" xml:base="http://localhost:4000/setup-macos/">&lt;h1&gt;Setup Developer para MacOS High Sierra&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-17T22:28:20-03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">William Martins</title><subtitle>Um blog sobre tecnologia e assuntos relacionados</subtitle><entry><title type="html">Implantação de sistemas</title><link href="http://localhost:4000/implantacao-sistemas-senior/" rel="alternate" type="text/html" title="Implantação de sistemas" /><published>2019-02-17T10:10:00-03:00</published><updated>2019-02-17T10:10:00-03:00</updated><id>http://localhost:4000/implantacao-sistemas-senior</id><content type="html" xml:base="http://localhost:4000/implantacao-sistemas-senior/">&lt;p&gt;Minha carreira profissional iniciou na área de Gestão de Pessoas em 2008 como um simples usuário do sistema da Senior, desde 2009 tenho tenho me especializado como analista e consultor para atender as demandas dessas áreas.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Módulos implantados:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;:chart_with_upwards_trend: Administração de Pessoal&lt;/li&gt;
+  &lt;li&gt;:alarm_clock: Controle de Ponto&lt;/li&gt;
+  &lt;li&gt;:bust_in_silhouette: Recrutamento e Seleção&lt;/li&gt;
+  &lt;li&gt;:mortar_board: Treinamento e Desenvolvimento&lt;/li&gt;
+  &lt;li&gt;:dart: Gestão de Competências&lt;/li&gt;
+  &lt;li&gt;:book: Cargos e Salários&lt;/li&gt;
+  &lt;li&gt;:warning: Segurança do Trabalho&lt;/li&gt;
+  &lt;li&gt;:hospital: Medicina do Trabalho&lt;/li&gt;
+  &lt;li&gt;:closed_lock_with_key: Gestão de Acesso e Segurança&lt;/li&gt;
+  &lt;li&gt;:fork_and_knife: Controle de Refeitório&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;</content><author><name>willmartinsmg</name></author><category term="project" /><category term="senior" /><summary type="html">Minha carreira profissional iniciou na área de Gestão de Pessoas em 2008 como um simples usuário do sistema da Senior, desde 2009 tenho tenho me especializado como analista e consultor para atender as demandas dessas áreas.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/senior_sistemas.png" /></entry><entry><title type="html">Setup Developer para MacOS High Sierra</title><link href="http://localhost:4000/setup-macos/" rel="alternate" type="text/html" title="Setup Developer para MacOS High Sierra" /><published>2019-02-16T04:20:00-02:00</published><updated>2019-02-16T04:20:00-02:00</updated><id>http://localhost:4000/setup-macos</id><content type="html" xml:base="http://localhost:4000/setup-macos/">&lt;h1&gt;Setup Developer para MacOS High Sierra&lt;/h1&gt;
 
 &lt;h2&gt;1 - Executar a atualização do sistema e as aplicações&lt;/h2&gt;
 
@@ -139,7 +158,23 @@ sh -c &quot;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/to
 &lt;p&gt;O comando abaixo altera o local que é feito a captura de tela&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;defaults write com.apple.screencapture location ~/Pictures
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>willmartinsmg</name></author><category term="blog" /><category term="setup" /><category term="macos" /><summary type="html">Setup Developer para MacOS High Sierra</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/markdown.jpg" /></entry><entry><title type="html">Comandos rápidos de Docker</title><link href="http://localhost:4000/comandos-docker/" rel="alternate" type="text/html" title="Comandos rápidos de Docker" /><published>2018-10-01T04:20:00-03:00</published><updated>2018-10-01T04:20:00-03:00</updated><id>http://localhost:4000/comandos-docker</id><content type="html" xml:base="http://localhost:4000/comandos-docker/">&lt;h1 id=&quot;comandos-docker&quot;&gt;Comandos Docker&lt;/h1&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>willmartinsmg</name></author><category term="blog" /><category term="setup" /><category term="macos" /><summary type="html">Setup Developer para MacOS High Sierra</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/markdown.jpg" /></entry><entry><title type="html">Loja virtual - Oficina do Gelo</title><link href="http://localhost:4000/loja-virtual/" rel="alternate" type="text/html" title="Loja virtual - Oficina do Gelo" /><published>2019-02-15T10:10:00-02:00</published><updated>2019-02-15T10:10:00-02:00</updated><id>http://localhost:4000/loja-virtual</id><content type="html" xml:base="http://localhost:4000/loja-virtual/">&lt;p&gt;Customização da loja virtual da empresa Oficina do Gelo.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://oficinadogelo.com.br&quot; target=&quot;_blank&quot;&gt;Oficina do Gelo&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Habilidades utilizadas:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Prestashop&lt;/li&gt;
+  &lt;li&gt;PHP&lt;/li&gt;
+  &lt;li&gt;HTML&lt;/li&gt;
+  &lt;li&gt;CSS&lt;/li&gt;
+  &lt;li&gt;Javascript&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;</content><author><name>willmartinsmg</name></author><category term="project" /><category term="loja virtual" /><category term="prestashop" /><category term="php" /><category term="css" /><category term="html" /><category term="javascript" /><category term="mysql" /><summary type="html">Customização da loja virtual da empresa Oficina do Gelo.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/oficina-do-gelo-logo.jpg" /></entry><entry><title type="html">Comandos rápidos de Docker</title><link href="http://localhost:4000/comandos-docker/" rel="alternate" type="text/html" title="Comandos rápidos de Docker" /><published>2018-10-01T04:20:00-03:00</published><updated>2018-10-01T04:20:00-03:00</updated><id>http://localhost:4000/comandos-docker</id><content type="html" xml:base="http://localhost:4000/comandos-docker/">&lt;h1 id=&quot;comandos-docker&quot;&gt;Comandos Docker&lt;/h1&gt;
 
 &lt;p&gt;Lista de comandos utéis&lt;/p&gt;
 
@@ -772,25 +807,4 @@ It’s sometimes handy for breaking things up.&lt;/p&gt;
         &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'#hamburguer__open'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fadeIn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'fast'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
     &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
-&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name>willmartinsmg</name></author><category term="blog" /><category term="markdown" /><category term="elements" /><summary type="html">Basic formatting</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/markdown.jpg" /></entry><entry><title type="html">:ramen: Indigo, minimalist jekyll theme</title><link href="http://localhost:4000/indigo-jekyll-theme/" rel="alternate" type="text/html" title=":ramen: Indigo, minimalist jekyll theme" /><published>2016-01-23T22:10:00-02:00</published><updated>2016-01-23T22:10:00-02:00</updated><id>http://localhost:4000/indigo-jekyll-theme</id><content type="html" xml:base="http://localhost:4000/indigo-jekyll-theme/">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/sergiokopplin/indigo/gh-pages/assets/screen-shot.png&quot; alt=&quot;Screenshot&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Example of project - Indigo Minimalist Jekyll Template - &lt;a href=&quot;http://sergiokopplin.github.io/indigo/&quot;&gt;Demo&lt;/a&gt;. This is a simple and minimalist template for Jekyll for those who likes to eat noodles.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;What has inside?&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Gulp&lt;/li&gt;
-  &lt;li&gt;BrowserSync&lt;/li&gt;
-  &lt;li&gt;Stylus&lt;/li&gt;
-  &lt;li&gt;SVG&lt;/li&gt;
-  &lt;li&gt;Travis&lt;/li&gt;
-  &lt;li&gt;No JS&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fsergiokopplin.github.io%2Findigo%2F&quot;&gt;98/100&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://sergiokopplin.github.io/indigo/&quot;&gt;Check it out&lt;/a&gt; here.
-If you need some help, just &lt;a href=&quot;http://github.com/sergiokopplin/indigo/issues&quot;&gt;tell me&lt;/a&gt;.&lt;/p&gt;</content><author><name>willmartinsmg</name></author><category term="project" /><category term="jekyll" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://koppl.in/indigo/assets/images/jekyll-logo-light-solid.png" /></entry></feed>
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name>willmartinsmg</name></author><category term="blog" /><category term="markdown" /><category term="elements" /><summary type="html">Basic formatting</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/markdown.jpg" /></entry></feed>
