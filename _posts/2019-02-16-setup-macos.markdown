@@ -26,7 +26,6 @@ https://brew.sh/
 Comando para instalar homebrew
 /usr/bin/ruby -e "\$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-brew cask install insomnia
 brew install git
 brew install node
 brew install yarn
@@ -48,6 +47,8 @@ npm install -g replace
 ```
 # Dev
 brew cask install visual-studio-code
+brew cask install postman
+brew cask install postico
 brew cask install virtualbox
 brew cask install insomnia
 
