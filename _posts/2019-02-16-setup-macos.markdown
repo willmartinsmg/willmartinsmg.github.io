@@ -91,6 +91,8 @@ Extensões que devem ser instaladas:
 
 # Dracula Official - dracula-theme.theme-dracula
 
+# vscode-styled-components - jpoissonnier.vscode-styled-components
+
 
 Após incluir as extensões, deve ir em setting (JSON) e incluir as linhas:
 {
