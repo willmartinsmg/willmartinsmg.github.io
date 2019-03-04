@@ -96,22 +96,33 @@ Extensões que devem ser instaladas:
 
 Após incluir as extensões, deve ir em setting (JSON) e incluir as linhas:
 {
+  // Configuração geral do VS Code
   "workbench.iconTheme": "material-icon-theme",
-  "prettier.singleQuote": true,
+  "workbench.statusBar.feedback.visible": false,
+  "workbench.colorTheme": "Dracula",
+  "terminal.integrated.fontSize": 14,
+  "breadcrumbs.enabled": true,
+  "explorer.confirmDragAndDrop": false,
+
+  // Configuração do editor
   "editor.formatOnSave": true,
-  "prettier.eslintIntegration": true,
-  "prettier.trailingComma": "all",
-  "prettier.semi": false,
   "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
-  "workbench.statusBar.feedback.visible": false,
-  "editor.tabSize": 2,
-  "editor.minimap.enabled": false,
-  "workbench.colorTheme": "Dracula",
   "editor.lineHeight": 24,
   "editor.renderLineHighlight": "gutter",
-  "terminal.integrated.fontSize": 14,
+  "editor.tabSize": 2,
+  "editor.minimap.enabled": false,
+  "editor.parameterHints.enabled": false,
+  "editor.autoClosingBrackets": "always",
+
+  // Configuração do prettier
+  "prettier.singleQuote": true,
+  "prettier.eslintIntegration": true,
+  "prettier.trailingComma": "all",
+  "prettier.semi": false,
+
+  // Configuração de arquivos javascript
   "emmet.syntaxProfiles": {
     "javascript": "jsx"
   },
@@ -119,9 +130,18 @@ Após incluir as extensões, deve ir em setting (JSON) e incluir as linhas:
     "javascript": "javascriptreact"
   },
   "javascript.updateImportsOnFileMove.enabled": "never",
-  "breadcrumbs.enabled": true,
-  "editor.parameterHints.enabled": false
+
+  // Configuração da extensão git
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+
+  // Configuração da extensão HTML
+  "html.format.enable": true,
+  "html.autoClosingTags": true,
+  "html.suggest.html5": true
 }
+
 
 A fonte Fira Code deve ser baixada e instalada no MacOS. https://github.com/tonsky/FiraCode
 
