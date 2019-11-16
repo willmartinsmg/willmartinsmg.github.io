@@ -57,6 +57,23 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) {
+      // add frontmatter-markdown-loader
+      config.module.rules.push({
+        test: /\.md$/,
+        use: ['raw-loader']
+      })
+    }
+  },
+
+  extend(config, { isDev, isClient }) {
+    if (isDev && isClient) {
+      config.module.rules.push({
+        enforce: 'pre',
+        test: /\.(js|vue)$/,
+        loader: 'eslint-loader',
+        exclude: /(node_modules)/
+      })
+    }
   }
 }
