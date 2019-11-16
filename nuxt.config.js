@@ -1,3 +1,6 @@
+const path = require('path')
+const glob = require('glob')
+
 export default {
   mode: 'universal',
   /*
@@ -58,10 +61,10 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {
-      // add frontmatter-markdown-loader
       config.module.rules.push({
         test: /\.md$/,
-        use: ['raw-loader']
+        include: path.resolve(__dirname, 'content'),
+        loader: 'frontmatter-markdown-loader'
       })
     }
   },
@@ -76,4 +79,14 @@ export default {
       })
     }
   }
+}
+
+function dynamicMarkdownRoutes() {
+  return [].concat(
+    ...markdownPaths.map((mdPath) => {
+      return glob
+        .sync(`${mdPath}/*.md`, { cwd: 'content' })
+        .map((filepath) => `${mdPath}/${path.basename(filepath, '.md')}`)
+    })
+  )
 }
