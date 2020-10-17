@@ -43,5 +43,5 @@ Ele está começando com um template um pouco estranho, mas durante as atualiza�
 
 ```javascript
 const plop = "coucou";
-const toto = "tata";
+const toto = "tatata";
 ```
