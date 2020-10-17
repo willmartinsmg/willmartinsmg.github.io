@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel><title><![CDATA[William Martins]]></title><description><![CDATA[Meu blog pessoal]]></description><link>https://willmartinsmg.github.io//</link><image><url>https://willmartinsmg.github.io//undefined</url><title>William Martins</title><link>https://willmartinsmg.github.io//</link></image><generator>Ghost 2.9</generator><lastBuildDate>Sat, 17 Oct 2020 12:32:52 GMT</lastBuildDate><atom:link href="https://willmartinsmg.github.io//rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Meu primeiro post]]></title><description><![CDATA[Estou dando início a um blogEsse blog tem o intuito de ajudar as pessoas onde já tive bastante em dicas simples do meu dia a dia.Ele está…]]></description><link>meu-primeiro-post</link><guid isPermaLink="true">meu-primeiro-post</guid><dc:creator><![CDATA[William Martins]]></dc:creator><pubDate>Sat, 17 Oct 2020 11:07:34 GMT</pubDate><media:content url="https://willmartinsmg.github.io//static/21e2ebff6862b2ff509ae2dd9a28c002/b7bdc/network-world.png" medium="image"/><content:encoded><![CDATA[<img src="https://willmartinsmg.github.io//static/21e2ebff6862b2ff509ae2dd9a28c002/b7bdc/network-world.png"/><p>Estou dando início a um blog</p>
+<p>Esse blog tem o intuito de ajudar as pessoas onde já tive bastante em dicas simples do meu dia a dia.</p>
+<p>Ele está começando com um template um pouco estranho, mas durante as atualizações vou ir melhorando aos poucos as aparências e algumas coisas simples que precisam ser ajustadas.</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> plop <span class="token operator">=</span> <span class="token string">"coucou"</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> toto <span class="token operator">=</span> <span class="token string">"tata"</span><span class="token punctuation">;</span></code></pre></div>]]></content:encoded></item><item><title><![CDATA[Definindo a variável de ambiente NLS_LANG]]></title><description><![CDATA[Definindo a variável de ambiente NLSLANG para bancos de dados Oracle
+Siga este procedimento para definir a variável de ambiente NLSLANG para…]]></description><link>variavel-ambiente-oracle</link><guid isPermaLink="true">variavel-ambiente-oracle</guid><dc:creator><![CDATA[William Martins]]></dc:creator><pubDate>Sat, 17 Oct 2020 11:07:34 GMT</pubDate><media:content url="https://willmartinsmg.github.io//static/21e2ebff6862b2ff509ae2dd9a28c002/b7bdc/network-world.png" medium="image"/><content:encoded><![CDATA[<img src="https://willmartinsmg.github.io//static/21e2ebff6862b2ff509ae2dd9a28c002/b7bdc/network-world.png"/><p>Definindo a variável de ambiente NLS<em>LANG para bancos de dados Oracle
+Siga este procedimento para definir a variável de ambiente NLS</em>LANG para bancos de dados Oracle.</p>
+<h2>Para definir a variável de ambiente NLS_LANG para bancos de dados Oracle</h2>
+<p>Determine o valor NLS_LANG.</p>
+<p>No banco de dados do data warehouse, execute o comando</p>
+<div class="gatsby-highlight" data-language="sql"><pre class="language-sql"><code class="language-sql"><span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> $NLS_PARAMETERS</code></pre></div>
+<p>Anote o valor NLS_LANG, que está no formato:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">[NLS_LANGUAGE]_[NLS_TERRITORY].[NLS_CHARACTERSET]</code></pre></div>
+<p>Por exemplo:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">American_America.UTF8</code></pre></div>
+<h2>Para Windows:</h2>
+<p>Navegue até Painel de controle> Sistema e clique na guia Avançado. Clique em Variáveis ​​de ambiente.
+Na seção Variáveis ​​do sistema, clique em Novo.
+No campo Nome da variável, insira NLS<em>LANG.
+No campo Valor da Variável, insira o valor NLS</em>LANG que foi retornado na Etapa 1 .
+O formato do valor NLS_LANG deve ser</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">[NLS_LANGUAGE]*[NLS_TERRITORY]. [NLS_CHARACTERSET].</code></pre></div>
+<p>Por exemplo:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">American_America.UTF8.</code></pre></div>
+<h2>Para UNIX</h2>
+<p>Defina a variável conforme mostrado abaixo:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">setenv NLS_LANG &lt;NLS_LANG&gt;</code></pre></div>
+<p>Por exemplo:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">setenv NLS_LANG American_America.UTF8</code></pre></div>
+<p>Se seus dados forem ASCII de 7 ou 8 bits e o Informatica Server estiver em execução no UNIX, defina</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">NLS_LANG &lt;NLS_LANGUAGE&gt;_&lt;NLS_TERRITORY&gt;.WE8ISO8859P1</code></pre></div>
+<p>CUIDADO: Certifique-se de definir a variável NLS_LANG corretamente, conforme declarado neste procedimento, ou seus dados não serão exibidos corretamente.</p>
+<p>Reinicialize a máquina após criar a variável.</p>
+<p>Referência: <a href="https://docs.oracle.com/cd/E12102_01/books/AnyInstAdm784/AnyInstAdmPreInstall18.html#wp1043751" target="_blank">Documentação Oracle</a></p>]]></content:encoded></item></channel></rss>
