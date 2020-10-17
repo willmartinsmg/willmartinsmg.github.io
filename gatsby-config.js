@@ -15,7 +15,7 @@ const gatsbyConfig =  {
         title: config.siteTitleMeta,
         description: config.siteDescriptionMeta,
     },
-    pathPrefix: "/willmartinsmg.github.io",
+    pathPrefix: "",
     mapping: {
         "MarkdownRemark.frontmatter.tags": `MarkdownRemark.frontmatter.tag_id`,
         "MarkdownRemark.frontmatter.author": `MarkdownRemark.frontmatter.author_id`,
