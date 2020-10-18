@@ -10,12 +10,12 @@ created_at: 2020-10-17T11:07:34.575Z
 weight: 2
 page: false
 tags:
-    - learning
-slug: "variavel-ambiente-oracle"
+    - oracle
+slug: "criando-usuario-oracle-11g"
 author: "william"
 comment: false
 meta_description: ""
-id: "variavel-ambiente-oracle"
+id: "criando-usuario-oracle-11g"
 ---
 
 Definindo a variável de ambiente NLS_LANG para bancos de dados Oracle

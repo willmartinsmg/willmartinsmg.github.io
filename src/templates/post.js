@@ -7,6 +7,8 @@ import { Layout } from '../components/common'
 import { MetaData } from '../components/common/meta'
 import { DiscussionEmbed } from "disqus-react"
 import config from "../utils/siteConfig"
+import { format } from 'date-fns'
+import ptBr from 'date-fns/locale/pt-BR'
 /**
 * Single post view (/:slug)
 *
@@ -49,7 +51,7 @@ class Post extends React.Component {
                                         className="post-full-meta-date"
                                         dateTime="{post.frontmatter.published_at}"
                                     >
-                                        {post.frontmatter.published_at}
+                                        {format(new Date(), "dd 'de' MMMM yyyy", {locale: ptBr})}
                                     </time>
 
                                     {post.frontmatter.tags.map(({ frontmatter }) => (

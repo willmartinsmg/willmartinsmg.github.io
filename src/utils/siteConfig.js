@@ -7,7 +7,7 @@ module.exports = {
     siteDescriptionMeta: `Meu blog pessoal`, // This allows an alternative site description for meta data for pages.
     siteTwitterHandle: `@willmartinsmg`,
     siteFacebookHandle: `william.martins86`,
-    language: `en`,
+    language: `pt-br`,
 
     shareImageWidth: 1000, // Change to the width of your default share image
     shareImageHeight: 523, // Change to the height of your default share image
