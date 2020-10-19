@@ -18,27 +18,40 @@ meta_description: ""
 id: "criando-usuario-oracle-11g"
 ---
 
--- Criar tablespace
+Os comandos abaixo, são a forma de criar usuário para o banco Oracle 11G para o sistema HCM da Senior Sistemas.
+
+### Criar tablespace
+
+O nome do tablespace a ser criado no exemplo se chama DADOS_VETORH, substitua esse nome para o que for melhor para você.
+
+```SQL
 create tablespace DADOS_VETORH
 datafile
-'C:\app\william\product\11.2.0\dbhome_1\oradata\dados_vetorh.dbf'
+'C:\app\william\product\11.2.0\dbhome_1\oradata\DADOS_VETORH.dbf'
 size 10000m autoextend on next 5000m maxsize 10000m
 online
 permanent
 extent management local autoallocate
 segment space management auto;
+```
 
--- Criar Usu�rio
+### Criar usuário
+
+O nome do usuário utilizado no exemplo é VETORH.
+
+```SQL
 create user VETORH
 identified by "VETORH"
 default tablespace DADOS_VETORH
 temporary tablespace TEMP
 profile DEFAULT;
+```
 
--- Grant/Revoke role privileges
+### Definindo privilégios
+
+```sql
 grant connect to VETORH;
 grant resource to VETORH;
--- Grant/Revoke system privileges
 grant create any view to VETORH;
 grant create procedure to VETORH;
 grant create sequence to VETORH;
@@ -51,8 +64,12 @@ grant execute any evaluation context to VETORH;
 grant select any dictionary to VETORH;
 grant select any table to VETORH;
 grant unlimited tablespace to VETORH;
+```
 
--- Atualizar o usu�rio
-alter user VETORH quota unlimited on DADOS_VETORH;
+### Atualiza usuário
+
+```sql
+ALTER user VETORH quota UNLIMITED ON DADOS_VETORH;
 ALTER USER VETORH ACCOUNT UNLOCK;
 ALTER USER VETORH IDENTIFIED BY VETORH;
+```
