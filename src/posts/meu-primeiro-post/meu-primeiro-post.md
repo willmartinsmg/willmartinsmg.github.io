@@ -18,8 +18,8 @@ meta_description: ""
 id: "primeiro-post"
 ---
 
-Estou dando início a um blog
+Estou dando início a um blog.
 
-Esse blog tem o intuito de ajudar as pessoas onde já tive bastante em dicas simples do meu dia a dia.
+Esse blog tem o intuito de ajudar as pessoas com dicas simples do meu dia a dia. O que eu irei aprendendo, farei um post a respeito.
 
-Ele está começando com um template um pouco estranho, mas durante as atualizações vou ir melhorando aos poucos as aparências e algumas coisas simples que precisam ser ajustadas.
+Ele está começando com um template um pouco estranho, mas com o tempo irei melhorando aos pouco.
