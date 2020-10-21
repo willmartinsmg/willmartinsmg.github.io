@@ -22,6 +22,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
     const site = config
     const twitterUrl = config.siteTwitterHandle ? `https://twitter.com/${config.siteTwitterHandle.replace(/^@/, ``)}` : null
     const facebookUrl = config.siteFacebookHandle ? `https://www.facebook.com/${config.siteFacebookHandle.replace(/^\//, ``)}` : null
+    const githubUrl = config.siteGithubHandle ? `https://github.com/${config.siteGithubHandle.replace(/^@/, ``)}` : null
 
     return (
     <>
@@ -52,6 +53,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                     </nav>}
                             </div>
                             <div className="site-mast-right">
+                                { config.siteGithubHandle && <a href={ githubUrl } className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/github.svg" alt="Github" /></a>}
                                 { config.siteTwitterHandle && <a href={ twitterUrl } className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/twitter.svg" alt="Twitter" /></a>}
                                 { config.siteFacebookHandle && <a href={ facebookUrl } className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/facebook.svg" alt="Facebook" /></a>}
                                 <a className="site-nav-item" href={ `https://feedly.com/i/subscription/feed/${config.siteUrl}/rss/` } target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/rss.svg" alt="RSS Feed" /></a>
