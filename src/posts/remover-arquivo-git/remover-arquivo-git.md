@@ -10,7 +10,7 @@ created_at: 2020-10-21T11:07:34.575Z
 weight: 2
 page: false
 tags:
-    - oracle
+    - git
 slug: "remover-arquivo-git"
 author: "william"
 comment: true
