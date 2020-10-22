@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel><title><![CDATA[William Martins]]></title><description><![CDATA[Meu blog pessoal]]></description><link>https://willmartinsmg.github.io//</link><image><url>https://willmartinsmg.github.io//undefined</url><title>William Martins</title><link>https://willmartinsmg.github.io//</link></image><generator>Ghost 2.9</generator><lastBuildDate>Thu, 22 Oct 2020 16:30:01 GMT</lastBuildDate><atom:link href="https://willmartinsmg.github.io//rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Configurações básicas do meu setup de desenvolvimento]]></title><description><![CDATA[Toda vez que é preciso trocar de máquina ou formatar é bem chato ficar configurando a máquina para iniciar os trabalhos, por isso... montei…]]></description><link>setup-de-desenvolvimento</link><guid isPermaLink="true">setup-de-desenvolvimento</guid><dc:creator><![CDATA[William Martins]]></dc:creator><pubDate>Thu, 22 Oct 2020 11:07:34 GMT</pubDate><media:content url="https://willmartinsmg.github.io//static/247659ea5c0e7160964d599d4b0ffcf7/3f9f3/wallhaven-nzd21y_2560x1440.png" medium="image"/><content:encoded><![CDATA[<img src="https://willmartinsmg.github.io//static/247659ea5c0e7160964d599d4b0ffcf7/3f9f3/wallhaven-nzd21y_2560x1440.png"/><p>Toda vez que é preciso trocar de máquina ou formatar é bem chato ficar configurando a máquina para iniciar os trabalhos, por isso... montei esse post com o que eu preciso fazer para deixar a máquina pronta para decolar.</p>
+<h4>1. Executar a atualização do sistema e as aplicações</h4>
+<h4>2. Instalar o Xcode</h4>
+<h4>3. Instalar HomeBrew</h4>
+<p><a href="https://brew.sh/" target="_blank">https://brew.sh/</a></p>
+<p>Comando para instalar homebrew</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">$ /usr/bin/ruby -e &quot;\$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</code></pre></div>
+<h4>4. Ferramentas para utilizar durante o desenvolvimento</h4>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">$ brew install git
+$ brew install node
+$ brew install yarn
+$ brew cask install visual-studio-code
+$ brew cask install insomnia
+$ brew cask install google-chrome
+$ brew cask install firefox</code></pre></div>
+<h4>5. Ferramentas de comunicação e outros</h4>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">brew cask install skype
+brew cask install slack
+brew cask install caffeine
+brew cask install vlc</code></pre></div>
+<h4>6. Configurando o VS Studio Code</h4>
+<p>O VScode habilitou a sincronização de extensões e configurações de acordo com o usuário, mas antes disso, era necessário sempre configurar tudo sempre, por isso, eu tenho as configurações que sempre faço no VScode.</p>
+<p>Extensões que devem ser instaladas:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text"># ESLint - Dirk Baeumer
+
+# Prettier Code formatter - Esben Petersen
+
+# Material Icon Theme - Philipp Kief
+
+# Docker - Microsoft
+
+# Dracula Official - dracula-theme.theme-dracula
+
+# Color Highlight - naumovs.color-highlight
+
+# DotENV - mikestead.dotenv
+
+# EditorConfig for VS Code - editorconfig.editorconfig
+
+# ES7 React/Redux/GraphQL/React-Native snippets - dsznajder.es7-react-js-snippets
+
+# GitLens — Git supercharged - eamodio.gitlens
+
+# Live Server - ritwickdey.liveserver
+
+# Markdown All in One - yzhang.markdown-all-in-one
+
+# Markdown Preview Enhanced - shd101wyy.markdown-preview-enhanced
+
+# Rocketseat React Native - rocketseat.rocketseatreactnative
+
+# vscode-styled-components - jpoissonnier.vscode-styled-components</code></pre></div>
+<p>Após incluir as extensões, deve ir em setting (JSON) e incluir as linhas:</p>
+<div class="gatsby-highlight" data-language="json"><pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
+    <span class="token comment">// Configuração geral do VS Code</span>
+    <span class="token property">"workbench.iconTheme"</span><span class="token operator">:</span> <span class="token string">"material-icon-theme"</span><span class="token punctuation">,</span>
+    <span class="token property">"workbench.statusBar.feedback.visible"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token property">"workbench.colorTheme"</span><span class="token operator">:</span> <span class="token string">"Dracula"</span><span class="token punctuation">,</span>
+    <span class="token property">"terminal.integrated.fontSize"</span><span class="token operator">:</span> <span class="token number">14</span><span class="token punctuation">,</span>
+    <span class="token property">"breadcrumbs.enabled"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">"explorer.confirmDragAndDrop"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// Configuração do editor</span>
+    <span class="token property">"editor.formatOnSave"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">"editor.fontFamily"</span><span class="token operator">:</span> <span class="token string">"Fira Code, Menlo, Monaco, 'Courier New', monospace"</span><span class="token punctuation">,</span>
+    <span class="token property">"editor.fontLigatures"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">"editor.fontSize"</span><span class="token operator">:</span> <span class="token number">14</span><span class="token punctuation">,</span>
+    <span class="token property">"editor.lineHeight"</span><span class="token operator">:</span> <span class="token number">24</span><span class="token punctuation">,</span>
+    <span class="token property">"editor.renderLineHighlight"</span><span class="token operator">:</span> <span class="token string">"gutter"</span><span class="token punctuation">,</span>
+    <span class="token property">"editor.tabSize"</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token property">"editor.minimap.enabled"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token property">"editor.parameterHints.enabled"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token property">"editor.autoClosingQuotes"</span><span class="token operator">:</span> <span class="token string">"always"</span><span class="token punctuation">,</span>
+    <span class="token property">"editor.rulers"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">80</span><span class="token punctuation">,</span> <span class="token number">120</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// Configuração do prettier</span>
+    <span class="token property">"prettier.singleQuote"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// </span><span class="token property">"prettier.eslintIntegration"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">"prettier.eslint"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">"prettier.trailingComma"</span><span class="token operator">:</span> <span class="token string">"all"</span><span class="token punctuation">,</span>
+    <span class="token property">"prettier.semi"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token property">"[javascript]"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"editor.codeActionsOnSave"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">"source.fixAll.eslint"</span><span class="token operator">:</span> <span class="token boolean">true</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"[javascriptreact]"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"editor.codeActionsOnSave"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">"source.fixAll.eslint"</span><span class="token operator">:</span> <span class="token boolean">true</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"[typescript]"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"editor.codeActionsOnSave"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">"source.fixAll.eslint"</span><span class="token operator">:</span> <span class="token boolean">true</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"[typescriptreact]"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"editor.codeActionsOnSave"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">"source.fixAll.eslint"</span><span class="token operator">:</span> <span class="token boolean">true</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"vetur.format.defaultFormatter.js"</span><span class="token operator">:</span> <span class="token string">"vscode-typescript"</span><span class="token punctuation">,</span>
+    <span class="token property">"vetur.format.defaultFormatter.html"</span><span class="token operator">:</span> <span class="token string">"js-beautify-html"</span><span class="token punctuation">,</span>
+    <span class="token property">"javascript.format.insertSpaceBeforeFunctionParenthesis"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token comment">// Configuração de arquivos javascript</span>
+    <span class="token property">"emmet.syntaxProfiles"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"javascript"</span><span class="token operator">:</span> <span class="token string">"jsx"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"emmet.includeLanguages"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"javascript"</span><span class="token operator">:</span> <span class="token string">"javascriptreact"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"javascript.updateImportsOnFileMove.enabled"</span><span class="token operator">:</span> <span class="token string">"never"</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// Configuração da extensão git</span>
+    <span class="token property">"git.confirmSync"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token property">"git.enableSmartCommit"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">"git.autofetch"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// Configuração da extensão HTML</span>
+    <span class="token property">"html.format.enable"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">"html.autoClosingTags"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">"html.suggest.html5"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">"liveServer.settings.donotShowInfoMsg"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">"liveServer.settings.port"</span><span class="token operator">:</span> <span class="token number">5501</span><span class="token punctuation">,</span>
+    <span class="token property">"editor.codeActionsOnSave"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"source.fixAll.eslint"</span><span class="token operator">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"liveServer.settings.donotVerifyTags"</span><span class="token operator">:</span> <span class="token boolean">true</span>
+<span class="token punctuation">}</span></code></pre></div>
+<h4>7. Configuração de fonte</h4>
+<p>A fonte Fira Code deve ser baixada e instalada no MacOS.
+<a href="https://github.com/tonsky/FiraCode" target="_blank">https://github.com/tonsky/FiraCode</a></p>
+<h4>8. Configurando Terminal</h4>
+<p>Baixar perfil de tema Dracula</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">$ git clone https://github.com/dracula/terminal-app.git</code></pre></div>
+<h4>9. Instalar oh my zsh</h4>
+<p>Acessar a página <a href="https://ohmyz.sh/" target="_blank">https://ohmyz.sh/</a> e executar o comando de instalação.</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">$ sh -c &quot;\$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;</code></pre></div>
+<h4>10 - Instalar o <a href="https://github.com/denysdovhan/spaceship-prompt" target="_blank">Spaceship</a></h4>
+<p>Executar o comando:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">$ git clone https://github.com/denysdovhan/spaceship-prompt.git &quot;\$ZSH_CUSTOM/themes/spaceship-prompt&quot; --depth=1</code></pre></div>
+<p>Fazer link do tema spaceship para o oh-my-zsh:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">ln -s &quot;$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme&quot; &quot;$ZSH_CUSTOM/themes/spaceship.zsh-theme&quot;</code></pre></div>
+<p>Configurar o tema no arquivo .zshrc: ZSH_THEME="spaceship"</p>
+<h4>11 <a href="https://github.com/zdharma/zinit" target="_blank">Zinit</a></h4>
+<p>Executar o seguinte comando:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">$ sh -c &quot;$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)&quot;</code></pre></div>
+<h4>12. Configuração do arquivo .zshrc</h4>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:\$ANDROID_HOME/platform-tools
+
+source ~/.zinit/bin/zinit.zsh
+
+# If you come from bash you might have to change your \$PATH.
+
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# Path to your oh-my-zsh installation.
+
+export ZSH=&quot;/Users/william/.oh-my-zsh&quot;
+
+# Set name of the theme to load --- if set to &quot;random&quot;, it will
+
+# load a random theme each time oh-my-zsh is loaded, in which case,
+
+# to know which specific one was loaded, run: echo \$RANDOM_THEME
+
+# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+
+ZSH_THEME=&quot;spaceship&quot;
+
+# Set list of themes to pick from when loading at random
+
+# Setting this variable when ZSH_THEME=random will cause zsh to load
+
+# a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
+
+# If set to an empty array, this variable will have no effect.
+
+# ZSH_THEME_RANDOM_CANDIDATES=( &quot;robbyrussell&quot; &quot;agnoster&quot; )
+
+# Uncomment the following line to use case-sensitive completion.
+
+# CASE_SENSITIVE=&quot;true&quot;
+
+# Uncomment the following line to use hyphen-insensitive completion.
+
+# Case-sensitive completion must be off. \_ and - will be interchangeable.
+
+# HYPHEN_INSENSITIVE=&quot;true&quot;
+
+# Uncomment the following line to disable bi-weekly auto-update checks.
+
+# DISABLE_AUTO_UPDATE=&quot;true&quot;
+
+# Uncomment the following line to change how often to auto-update (in days).
+
+# export UPDATE_ZSH_DAYS=13
+
+# Uncomment the following line to disable colors in ls.
+
+# DISABLE_LS_COLORS=&quot;true&quot;
+
+# Uncomment the following line to disable auto-setting terminal title.
+
+# DISABLE_AUTO_TITLE=&quot;true&quot;
+
+# Uncomment the following line to enable command auto-correction.
+
+# ENABLE_CORRECTION=&quot;true&quot;
+
+# Uncomment the following line to display red dots whilst waiting for completion.
+
+# COMPLETION_WAITING_DOTS=&quot;true&quot;
+
+# Uncomment the following line if you want to disable marking untracked files
+
+# under VCS as dirty. This makes repository status check for large repositories
+
+# much, much faster.
+
+# DISABLE_UNTRACKED_FILES_DIRTY=&quot;true&quot;
+
+# Uncomment the following line if you want to change the command execution time
+
+# stamp shown in the history command output.
+
+# You can set one of the optional three formats:
+
+# &quot;mm/dd/yyyy&quot;|&quot;dd.mm.yyyy&quot;|&quot;yyyy-mm-dd&quot;
+
+# or set a custom format using the strftime function format specifications,
+
+# see &#39;man strftime&#39; for details.
+
+# HIST_STAMPS=&quot;mm/dd/yyyy&quot;
+
+# Would you like to use another custom folder than \$ZSH/custom?
+
+# ZSH_CUSTOM=/path/to/new-custom-folder
+
+# Which plugins would you like to load?
+
+# Standard plugins can be found in ~/.oh-my-zsh/plugins/\*
+
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+
+# Example format: plugins=(rails git textmate ruby lighthouse)
+
+# Add wisely, as too many plugins slow down shell startup.
+
+plugins=(git)
+
+source \$ZSH/oh-my-zsh.sh
+
+# User configuration
+
+# export MANPATH=&quot;/usr/local/man:\$MANPATH&quot;
+
+# You may need to manually set your language environment
+
+# export LANG=en_US.UTF-8
+
+# Preferred editor for local and remote sessions
+
+# if [[ -n $SSH_CONNECTION ]]; then
+
+# export EDITOR=&#39;vim&#39;
+
+# else
+
+# export EDITOR=&#39;mvim&#39;
+
+# fi
+
+# Compilation flags
+
+# export ARCHFLAGS=&quot;-arch x86_64&quot;
+
+# ssh
+
+# export SSH_KEY_PATH=&quot;~/.ssh/rsa_id&quot;
+
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+
+# For a full list of active aliases, run `alias`.
+
+#
+
+# Example aliases
+
+# alias zshconfig=&quot;mate ~/.zshrc&quot;
+
+# alias ohmyzsh=&quot;mate ~/.oh-my-zsh&quot;
+
+### Added by Zplugin&#39;s installer
+
+source &#39;/Users/william/.zplugin/bin/zplugin.zsh&#39;
+autoload -Uz \_zplugin
+(( \${+\_comps} )) &amp;&amp; \_comps[zplugin]=\_zplugin
+
+### End of Zplugin&#39;s installer chunk
+
+SPACESHIP_PROMPT_ORDER=(
+user
+dir
+host
+git
+node
+package
+exec_time
+line_sep
+vi_mode
+jobs
+exit_code
+char
+)
+
+SPACESHIP_PROMPT_ADD_NEWLINE=false
+SPACESHIP_CHAR_SYMBOL=&quot;&gt;&quot;
+SPACESHIP_CHAR_SUFFIX=&quot; &quot;
+
+### zplugin light zsh-users/zsh-autosuggestions
+
+### zplugin light zsh-users/zsh-completions
+
+### zplugin light zdharma/fast-syntax-highlighting### End of Zinit&#39;s installer chunk
+
+### End of Zinit&#39;s installer chunk
+
+# Two regular plugins loaded without tracking.
+
+zinit light zsh-users/zsh-autosuggestions
+zinit light zdharma/fast-syntax-highlighting
+zinit light zsh-users/zsh-completions
+zinit light zdharma/fast-syntax-highlighting
+
+# Plugin history-search-multi-word loaded with tracking.
+
+zinit load zdharma/history-search-multi-word</code></pre></div>
+<h4>13. Alterar local de captura de tela</h4>
+<p>O comando abaixo altera o local que é feito a captura de tela</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">defaults write com.apple.screencapture location ~/Pictures</code></pre></div>
+<h3>Links úteis</h3>
+<h4>Download VMs</h4>
+<p><a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/" target="_blank">https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/</a></p>]]></content:encoded></item><item><title><![CDATA[Removendo arquivo do Git]]></title><description><![CDATA[Fazer a remoção do arquivo git local, basta executar o comando abaixo.Caso seja apresentada uma mensagem de erro como essa:Será necessário…]]></description><link>remover-arquivo-git</link><guid isPermaLink="true">remover-arquivo-git</guid><dc:creator><![CDATA[William Martins]]></dc:creator><pubDate>Wed, 21 Oct 2020 11:07:34 GMT</pubDate><media:content url="https://willmartinsmg.github.io//static/1bd9419aa62424c2cbd307ed39a7e004/3f9f3/wallhaven-ne92z8_2560x1440.png" medium="image"/><content:encoded><![CDATA[<img src="https://willmartinsmg.github.io//static/1bd9419aa62424c2cbd307ed39a7e004/3f9f3/wallhaven-ne92z8_2560x1440.png"/><p>Fazer a remoção do arquivo git local, basta executar o comando abaixo.</p>
+<div class="gatsby-highlight" data-language="terminal"><pre class="language-terminal"><code class="language-terminal">$ git rm arquivo.txt</code></pre></div>
+<p>Caso seja apresentada uma mensagem de erro como essa:</p>
+<div class="gatsby-highlight" data-language="terminal"><pre class="language-terminal"><code class="language-terminal">error: the following file has changes staged in the index:
+arquivo.txt
+(use --cached to keep the file, or -f to force removal)</code></pre></div>
+<p>Será necessário executar um argumento a mais para remover o arquivo.</p>
+<div class="gatsby-highlight" data-language="terminal"><pre class="language-terminal"><code class="language-terminal">$ git rm --cached arquivo.txt</code></pre></div>]]></content:encoded></item><item><title><![CDATA[Criando usuário para o Oracle 11G]]></title><description><![CDATA[Os comandos abaixo, são a forma de criar usuário para o banco Oracle 11G para o sistema HCM da Senior Sistemas.Criar tablespaceO nome do…]]></description><link>criando-usuario-oracle-11g</link><guid isPermaLink="true">criando-usuario-oracle-11g</guid><dc:creator><![CDATA[William Martins]]></dc:creator><pubDate>Sun, 18 Oct 2020 11:07:34 GMT</pubDate><media:content url="https://willmartinsmg.github.io//static/1fc1a1df30dba954c2b1e810cfa30827/3f9f3/wallhaven-j5zqjp_2560x1440.png" medium="image"/><content:encoded><![CDATA[<img src="https://willmartinsmg.github.io//static/1fc1a1df30dba954c2b1e810cfa30827/3f9f3/wallhaven-j5zqjp_2560x1440.png"/><p>Os comandos abaixo, são a forma de criar usuário para o banco Oracle 11G para o sistema HCM da Senior Sistemas.</p>
+<h3>Criar tablespace</h3>
+<p>O nome do tablespace a ser criado no exemplo se chama DADOS_VETORH, substitua esse nome para o que for melhor para você.</p>
+<div class="gatsby-highlight" data-language="sql"><pre class="language-sql"><code class="language-sql"><span class="token keyword">create</span> <span class="token keyword">tablespace</span> DADOS_VETORH
+datafile
+<span class="token string">'C:\app\william\product\11.2.0\dbhome_1\oradata\DADOS_VETORH.dbf'</span>
+size <span class="token number">10000</span>m autoextend <span class="token keyword">on</span> <span class="token keyword">next</span> <span class="token number">5000</span>m maxsize <span class="token number">10000</span>m
+online
+permanent
+extent management <span class="token keyword">local</span> autoallocate
+segment space management auto<span class="token punctuation">;</span></code></pre></div>
+<h3>Criar usuário</h3>
+<p>O nome do usuário utilizado no exemplo é VETORH.</p>
+<div class="gatsby-highlight" data-language="sql"><pre class="language-sql"><code class="language-sql"><span class="token keyword">create</span> <span class="token keyword">user</span> VETORH
+identified <span class="token keyword">by</span> <span class="token string">"VETORH"</span>
+<span class="token keyword">default</span> <span class="token keyword">tablespace</span> DADOS_VETORH
+<span class="token keyword">temporary</span> <span class="token keyword">tablespace</span> <span class="token keyword">TEMP</span>
+profile <span class="token keyword">DEFAULT</span><span class="token punctuation">;</span></code></pre></div>
+<h3>Definindo privilégios</h3>
+<div class="gatsby-highlight" data-language="sql"><pre class="language-sql"><code class="language-sql"><span class="token keyword">grant</span> <span class="token keyword">connect</span> <span class="token keyword">to</span> VETORH<span class="token punctuation">;</span>
+<span class="token keyword">grant</span> resource <span class="token keyword">to</span> VETORH<span class="token punctuation">;</span>
+<span class="token keyword">grant</span> <span class="token keyword">create</span> <span class="token keyword">any</span> <span class="token keyword">view</span> <span class="token keyword">to</span> VETORH<span class="token punctuation">;</span>
+<span class="token keyword">grant</span> <span class="token keyword">create</span> <span class="token keyword">procedure</span> <span class="token keyword">to</span> VETORH<span class="token punctuation">;</span>
+<span class="token keyword">grant</span> <span class="token keyword">create</span> sequence <span class="token keyword">to</span> VETORH<span class="token punctuation">;</span>
+<span class="token keyword">grant</span> <span class="token keyword">create</span> <span class="token keyword">session</span> <span class="token keyword">to</span> VETORH<span class="token punctuation">;</span>
+<span class="token keyword">grant</span> <span class="token keyword">create</span> <span class="token keyword">table</span> <span class="token keyword">to</span> VETORH<span class="token punctuation">;</span>
+<span class="token keyword">grant</span> <span class="token keyword">create</span> <span class="token keyword">trigger</span> <span class="token keyword">to</span> VETORH<span class="token punctuation">;</span>
+<span class="token keyword">grant</span> <span class="token keyword">create</span> <span class="token keyword">view</span> <span class="token keyword">to</span> VETORH<span class="token punctuation">;</span>
+<span class="token keyword">grant</span> <span class="token keyword">delete</span> <span class="token keyword">any</span> <span class="token keyword">table</span> <span class="token keyword">to</span> VETORH<span class="token punctuation">;</span>
+<span class="token keyword">grant</span> <span class="token keyword">execute</span> <span class="token keyword">any</span> evaluation context <span class="token keyword">to</span> VETORH<span class="token punctuation">;</span>
+<span class="token keyword">grant</span> <span class="token keyword">select</span> <span class="token keyword">any</span> dictionary <span class="token keyword">to</span> VETORH<span class="token punctuation">;</span>
+<span class="token keyword">grant</span> <span class="token keyword">select</span> <span class="token keyword">any</span> <span class="token keyword">table</span> <span class="token keyword">to</span> VETORH<span class="token punctuation">;</span>
+<span class="token keyword">grant</span> unlimited <span class="token keyword">tablespace</span> <span class="token keyword">to</span> VETORH<span class="token punctuation">;</span></code></pre></div>
+<h3>Atualiza usuário</h3>
+<div class="gatsby-highlight" data-language="sql"><pre class="language-sql"><code class="language-sql"><span class="token keyword">ALTER</span> <span class="token keyword">user</span> VETORH quota UNLIMITED <span class="token keyword">ON</span> DADOS_VETORH<span class="token punctuation">;</span>
+<span class="token keyword">ALTER</span> <span class="token keyword">USER</span> VETORH ACCOUNT <span class="token keyword">UNLOCK</span><span class="token punctuation">;</span>
+<span class="token keyword">ALTER</span> <span class="token keyword">USER</span> VETORH IDENTIFIED <span class="token keyword">BY</span> VETORH<span class="token punctuation">;</span></code></pre></div>]]></content:encoded></item><item><title><![CDATA[Meu primeiro post]]></title><description><![CDATA[Estou dando início a um blog.Esse blog tem o intuito de ajudar as pessoas com dicas simples do meu dia a dia. O que eu irei aprendendo…]]></description><link>meu-primeiro-post</link><guid isPermaLink="true">meu-primeiro-post</guid><dc:creator><![CDATA[William Martins]]></dc:creator><pubDate>Sat, 17 Oct 2020 11:07:34 GMT</pubDate><media:content url="https://willmartinsmg.github.io//static/fa75a1a6fd2af1a9756bdc62cd2d36bf/3f9f3/wallhaven-md28v9_2560x1440.png" medium="image"/><content:encoded><![CDATA[<img src="https://willmartinsmg.github.io//static/fa75a1a6fd2af1a9756bdc62cd2d36bf/3f9f3/wallhaven-md28v9_2560x1440.png"/><p>Estou dando início a um blog.</p>
+<p>Esse blog tem o intuito de ajudar as pessoas com dicas simples do meu dia a dia. O que eu irei aprendendo, farei um post a respeito.</p>
+<p>Ele está começando com um template um pouco estranho, mas com o tempo irei melhorando aos pouco.</p>]]></content:encoded></item><item><title><![CDATA[Definindo a variável de ambiente NLS_LANG]]></title><description><![CDATA[Definindo a variável de ambiente NLSLANG para bancos de dados Oracle
+Siga este procedimento para definir a variável de ambiente NLSLANG para…]]></description><link>variavel-ambiente-oracle</link><guid isPermaLink="true">variavel-ambiente-oracle</guid><dc:creator><![CDATA[William Martins]]></dc:creator><pubDate>Sat, 17 Oct 2020 11:07:34 GMT</pubDate><media:content url="https://willmartinsmg.github.io//static/a983539f02fa1bfbbe287e78300ba72f/3f9f3/network-world.png" medium="image"/><content:encoded><![CDATA[<img src="https://willmartinsmg.github.io//static/a983539f02fa1bfbbe287e78300ba72f/3f9f3/network-world.png"/><p>Definindo a variável de ambiente NLS<em>LANG para bancos de dados Oracle
+Siga este procedimento para definir a variável de ambiente NLS</em>LANG para bancos de dados Oracle.</p>
+<h2>Para definir a variável de ambiente NLS_LANG para bancos de dados Oracle</h2>
+<p>Determine o valor NLS_LANG.</p>
+<p>No banco de dados do data warehouse, execute o comando</p>
+<div class="gatsby-highlight" data-language="sql"><pre class="language-sql"><code class="language-sql"><span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> $NLS_PARAMETERS</code></pre></div>
+<p>Anote o valor NLS_LANG, que está no formato:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">[NLS_LANGUAGE]_[NLS_TERRITORY].[NLS_CHARACTERSET]</code></pre></div>
+<p>Por exemplo:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">American_America.UTF8</code></pre></div>
+<h2>Para Windows:</h2>
+<p>Navegue até Painel de controle> Sistema e clique na guia Avançado. Clique em Variáveis ​​de ambiente.
+Na seção Variáveis ​​do sistema, clique em Novo.
+No campo Nome da variável, insira NLS<em>LANG.
+No campo Valor da Variável, insira o valor NLS</em>LANG que foi retornado na Etapa 1 .
+O formato do valor NLS_LANG deve ser</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">[NLS_LANGUAGE]*[NLS_TERRITORY]. [NLS_CHARACTERSET].</code></pre></div>
+<p>Por exemplo:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">American_America.UTF8.</code></pre></div>
+<h2>Para UNIX</h2>
+<p>Defina a variável conforme mostrado abaixo:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">setenv NLS_LANG &lt;NLS_LANG&gt;</code></pre></div>
+<p>Por exemplo:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">setenv NLS_LANG American_America.UTF8</code></pre></div>
+<p>Se seus dados forem ASCII de 7 ou 8 bits e o Informatica Server estiver em execução no UNIX, defina</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">NLS_LANG &lt;NLS_LANGUAGE&gt;_&lt;NLS_TERRITORY&gt;.WE8ISO8859P1</code></pre></div>
+<p>CUIDADO: Certifique-se de definir a variável NLS_LANG corretamente, conforme declarado neste procedimento, ou seus dados não serão exibidos corretamente.</p>
+<p>Reinicialize a máquina após criar a variável.</p>
+<p>Referência: <a href="https://docs.oracle.com/cd/E12102_01/books/AnyInstAdm784/AnyInstAdmPreInstall18.html#wp1043751" target="_blank">Documentação Oracle</a></p>]]></content:encoded></item></channel></rss>
