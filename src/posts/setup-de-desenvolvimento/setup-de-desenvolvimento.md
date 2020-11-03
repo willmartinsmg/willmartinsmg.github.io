@@ -436,6 +436,20 @@ O comando abaixo altera o local que é feito a captura de tela
 defaults write com.apple.screencapture location ~/Pictures
 ```
 
+#### 14. Correção de assinaturas do Mail
+
+Após o iCloud sincronizar as contas de e-mail do aplicativo Mail, ele tem demonstrado alguns bugs no momento da sincronização.
+Após sincronizar as contas e cadastrar uma assinatura, o Mail não salva essa assinatura e assim que o Mail for reiniciado, a assinatura é apagada e deve ser cadastrada novamente.
+Para corrigir esse bug, é necessário seguir os passos abaixo:
+
+1. Abrir o app _Preferências_
+2. Clique em _Contas de Internet_
+3. Selecione a opção _iCloud_
+4. Na opção _iCloud Drive_, clique no botão _Opções..._
+5. Desmarque a opção _Mail.app_
+
+Fazendo isso, a assinatura ficará salva permanentemente.
+
 ### Links úteis
 
 #### Download VMs
