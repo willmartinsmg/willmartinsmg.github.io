@@ -28,7 +28,7 @@ Determine o valor NLS_LANG.
 No banco de dados do data warehouse, execute o comando
 
 ```sql
-SELECT * FROM $NLS_PARAMETERS
+SELECT * FROM V$NLS_PARAMETERS
 ```
 
 Anote o valor NLS_LANG, que está no formato:
