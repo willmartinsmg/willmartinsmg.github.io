@@ -9,7 +9,7 @@
     "url": "https://github.com/akanshgulati/gatsby-theme-ghost.git"
   },
   "engines": {
-    "node": "12.13.0"
+    "node": "14.18.1"
   },
   "bugs": {
     "url": "https://github.com/akanshgulati/gatbsy-theme-ghost/issues"
