@@ -3,7 +3,7 @@ title: "Dicas Nextcloud no Raspberry Pi 4"
 date: 2020-11-24T11:07:34.575Z
 draft: false
 feature_image: wallhaven-nzd21y_2560x1440.png
-featured: false
+featured: true
 published_at: 2020-11-24T11:07:34.575Z
 updated_at: 2020-11-24T11:07:34.575Z
 created_at: 2020-11-24T11:07:34.575Z
