@@ -28,7 +28,7 @@ Determine o valor NLS_LANG.
 No banco de dados do data warehouse, execute o comando
 
 ```sql
-SELECT * FROM V$NLS_PARAMETERS
+SELECT * FROM v$NLS_PARAMETERS
 ```
 
 Anote o valor NLS_LANG, que está no formato:
@@ -43,7 +43,7 @@ Por exemplo:
 American_America.UTF8
 ```
 
-## Para Windows:
+## Para Windows
 
 Navegue até Painel de controle> Sistema e clique na guia Avançado. Clique em Variáveis ​​de ambiente.
 Na seção Variáveis ​​do sistema, clique em Novo.
