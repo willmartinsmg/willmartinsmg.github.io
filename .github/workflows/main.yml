@@ -9,7 +9,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # Checkout do código
       - uses: actions/checkout@v1
+
+      # Configura a versão correta do Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14.18.1
+
+      # Instalação e publicação com Gatsby
       - uses: enriikke/gatsby-gh-pages-action@v2
         with:
           access-token: ${{ secrets.wblog }}
