@@ -18,6 +18,12 @@ jobs:
         with:
           node-version: 14.18.1
 
+      # Instalar dependências do sistema necessárias para sharp
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential libvips-dev python3
+
       # Instalação e publicação com Gatsby
       - uses: enriikke/gatsby-gh-pages-action@v2
         with:
